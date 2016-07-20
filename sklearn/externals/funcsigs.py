@@ -20,8 +20,8 @@ __version__ = "0.4"
 __all__ = ['BoundArguments', 'Parameter', 'Signature', 'signature']
 
 
-_WrapperDescriptor = type(type.__call__)
-_MethodWrapper = type(all.__call__)
+_WrapperDescriptor = type(unicode.__getitem__)
+_MethodWrapper = type(unicode.__getitem__)
 
 _NonUserDefinedCallables = (_WrapperDescriptor,
                             _MethodWrapper,
